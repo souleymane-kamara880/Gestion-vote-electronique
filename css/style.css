@@ -1,0 +1,159 @@
+  /* import fonts from fonts.css file */ 
+   @import url(./fonts.css);
+  
+  /* MENU */
+  
+  .header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.8);
+    /* position: fixed; */
+    width: 100%;
+    z-index: 3;
+    padding: 1px;
+     
+  }
+  
+  header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+    color: black;
+    font: normal 500 15px/2px 'Roboto', cursive;
+    
+  }
+  
+  header li a:hover,
+  header .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+    font: normal 1000 25px/2px 'Roboto', cursive;
+  }
+  .menu li a:hover{
+    background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+  /* .dropdown-menu-dark{
+    height: 300px;
+  } */
+  /* menu */
+  
+ 
+  
+  /* menu icon */
+  
+ 
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    /* height: 2px; */
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: auto;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+
+  .header .menu-btn {
+    display: none;
+  }
+  
+
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  
+  /* 48em = 768px */
+  
+
+  
+   
+ 
+
+   #btn_action a:hover {
+       border: 2px solid transparent;
+       background: var(--color-purple) url(https://i.postimg.cc/wBXGXbWN/pixel.png);  
+       transition-delay: 0.8s;
+       background-size: 180px;
+       animation: animate var(--speed-fast) steps(8) forwards;
+     }
+     #btn_action a:last-of-type {
+       border: 1px solid var(--color-purple);
+     }
+       #btn_action a:hover {
+         background: var(--color-purple) url(https://i.postimg.cc/FzBWFtKM/pixel2.png); 
+         color: black; 
+         text-transform: uppercase;
+       }
+     
+   
+   @keyframes animate {
+     0% {
+       background-position-y: 0;
+     }
+     100% {
+       background-position-y: -480px;
+     }
+   }
+   
+    
+    /*fin btn call to action accueil */
+
+  /* fin section accueil */
+
+
+ /* css liste deroulante */
+ 
+ 
